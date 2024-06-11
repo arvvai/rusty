@@ -1,0 +1,36 @@
+use temp_converter::calc;
+
+#[test]
+fn test_temperature_conversions() {
+    // Test Celsius to Fahrenheit conversions
+    assert_eq!(calc::celsius_to_fahrenheit(0), 32);
+    assert_eq!(calc::celsius_to_fahrenheit(100), 212);
+    assert_eq!(calc::celsius_to_fahrenheit(-40), -40);
+    assert_eq!(calc::celsius_to_fahrenheit(37), 98);
+
+    // Test Fahrenheit to Celsius conversions
+    assert_eq!(calc::fahrenheit_to_celsius(32), 0);
+    assert_eq!(calc::fahrenheit_to_celsius(212), 100);
+    assert_eq!(calc::fahrenheit_to_celsius(-40), -40);
+    assert_eq!(calc::fahrenheit_to_celsius(98), 36);
+}
+
+#[test]
+fn test_fibonacci_function() {
+    assert_eq!(calc::fibonacci(0), 0);
+    assert_eq!(calc::fibonacci(1), 1);
+    assert_eq!(calc::fibonacci(2), 1);
+    assert_eq!(calc::fibonacci(3), 2);
+    assert_eq!(calc::fibonacci(10), 55);
+    assert_eq!(calc::fibonacci(20), 6765);
+}
+
+#[test]
+fn test_fibonacci_recursive_function() {
+    assert_eq!(calc::fibonacci_recursive(0), 0);
+    assert_eq!(calc::fibonacci_recursive(1), 1);
+    assert_eq!(calc::fibonacci_recursive(2), 1);
+    assert_eq!(calc::fibonacci_recursive(3), 2);
+    assert_eq!(calc::fibonacci_recursive(10), 55);
+    assert_eq!(calc::fibonacci_recursive(20), 6765);
+}
