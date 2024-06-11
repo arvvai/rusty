@@ -5,6 +5,3 @@ edition = "2021"
 
 [dependencies]
 audit = "0.7.3"
-
-[dev-dependencies]
-criterion = "0.4"
